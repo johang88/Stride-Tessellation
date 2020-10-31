@@ -1,0 +1,6 @@
+!Texture
+Id: a6221c71-eda8-4817-9cdd-0818740da1dd
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/mossy_rock_1k_png/mossy_rock_ao_1k.png
+Type: !GrayscaleTextureType {}

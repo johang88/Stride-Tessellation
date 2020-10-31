@@ -1,0 +1,7 @@
+!Texture
+Id: 7b2192f3-fe2a-435b-aaf2-93b993ed3493
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_diff_2k.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

@@ -1,0 +1,6 @@
+!Texture
+Id: db1ee246-f1c9-4919-8240-fd1b6fcf5cd4
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/mossy_rock_1k_png/mossy_rock_rough_1k.png
+Type: !GrayscaleTextureType {}

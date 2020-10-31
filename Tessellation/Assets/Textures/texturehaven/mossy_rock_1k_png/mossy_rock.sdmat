@@ -1,0 +1,55 @@
+!MaterialAsset
+Id: 8fa62bcd-317e-46cc-aa26-f5e47311b2c0
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Tessellation: !MaterialTessellationFlatFeature
+        TriangleSize: 1.0
+        AdjacentEdgeAverage: false
+    Displacement: !MaterialDisplacementMapFeature
+        DisplacementMap: !ComputeTextureScalar
+            Texture: 4acee4d2-4e85-4ec5-b3a7-76588a3ba643:Textures/texturehaven/mossy_rock_1k_png/mossy_rock_disp_1k
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Intensity: !ComputeFloat
+            Value: 1.0
+        Stage: Vertex
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: c81e12d9-b687-4d02-b6bf-78b2484c1604:Textures/texturehaven/mossy_rock_1k_png/mossy_rock_nor_1k
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+        IsXYNormal: true
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: db1ee246-f1c9-4919-8240-fd1b6fcf5cd4:Textures/texturehaven/mossy_rock_1k_png/mossy_rock_rough_1k
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Invert: true
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 06b95b6c-4fe2-4fac-988b-f7ef1322ef35:Textures/texturehaven/mossy_rock_1k_png/mossy_rock_diff_1k
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8856508, B: 0.6091625, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

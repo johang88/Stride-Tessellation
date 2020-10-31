@@ -1,0 +1,11 @@
+!ProceduralModelAsset
+Id: ef97dcad-c043-4861-b60f-8721383b6f25
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: !GeoSphereProceduralModel
+    Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+    UvScale: {X: 1.0, Y: 1.0}
+    LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
+    NumberOfTextureCoordinates: 10
+    MaterialInstance:
+        Material: 8fa62bcd-317e-46cc-aa26-f5e47311b2c0:Textures/texturehaven/mossy_rock_1k_png/mossy_rock

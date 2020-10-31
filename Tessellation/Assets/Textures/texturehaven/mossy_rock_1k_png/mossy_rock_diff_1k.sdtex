@@ -1,0 +1,7 @@
+!Texture
+Id: 06b95b6c-4fe2-4fac-988b-f7ef1322ef35
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/mossy_rock_1k_png/mossy_rock_diff_1k.png
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}

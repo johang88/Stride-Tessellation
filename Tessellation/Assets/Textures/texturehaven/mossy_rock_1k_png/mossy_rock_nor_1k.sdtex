@@ -1,0 +1,7 @@
+!Texture
+Id: c81e12d9-b687-4d02-b6bf-78b2484c1604
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/mossy_rock_1k_png/mossy_rock_nor_1k.png
+Type: !NormalMapTextureType
+    InvertY: false

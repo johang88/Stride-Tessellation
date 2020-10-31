@@ -1,0 +1,56 @@
+!MaterialAsset
+Id: 2171c0c1-6277-4eea-b24b-09030da07232
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Attributes:
+    Tessellation: !MaterialTessellationFlatFeature
+        TriangleSize: 1.0
+        AdjacentEdgeAverage: false
+    Displacement: !MaterialDisplacementMapFeature
+        DisplacementMap: !ComputeTextureScalar
+            Texture: 1f5081e6-f8be-4efa-95ab-9383aea8ed30:Textures/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_disp_2k
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Intensity: !ComputeFloat
+            Value: 1.0
+        ScaleAndBias: false
+        Stage: Domain
+    Surface: !MaterialNormalMapFeature
+        NormalMap: !ComputeTextureColor
+            Texture: bfe44e31-4e1b-4a87-949f-1e69e83d169d:Textures/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_nor_2k
+            FallbackValue:
+                Value: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+        IsXYNormal: true
+    MicroSurface: !MaterialGlossinessMapFeature
+        GlossinessMap: !ComputeTextureScalar
+            Texture: cc335c0a-65be-4098-ac6c-4833d9b67ff0:Textures/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_rough_2k
+            FallbackValue:
+                Value: 1.0
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+        Invert: true
+    Diffuse: !MaterialDiffuseMapFeature
+        DiffuseMap: !ComputeTextureColor
+            Texture: 7b2192f3-fe2a-435b-aaf2-93b993ed3493:Textures/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_diff_2k
+            FallbackValue:
+                Value: {R: 1.0, G: 0.8856508, B: 0.6091625, A: 1.0}
+            Scale: {X: 1.0, Y: 1.0}
+            Offset: {X: 0.0, Y: 0.0}
+            Swizzle: null
+    DiffuseModel: !MaterialDiffuseLambertModelFeature {}
+    Specular: !MaterialMetalnessMapFeature
+        MetalnessMap: !ComputeFloat
+            Value: 0.0
+    SpecularModel: !MaterialSpecularMicrofacetModelFeature
+        Fresnel: !MaterialSpecularMicrofacetFresnelSchlick {}
+        Visibility: !MaterialSpecularMicrofacetVisibilitySmithSchlickGGX {}
+        NormalDistribution: !MaterialSpecularMicrofacetNormalDistributionGGX {}
+        Environment: !MaterialSpecularMicrofacetEnvironmentGGXLUT {}
+    Overrides:
+        UVScale: {X: 1.0, Y: 1.0}
+Layers: {}

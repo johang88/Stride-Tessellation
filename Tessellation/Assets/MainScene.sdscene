@@ -1,0 +1,187 @@
+!SceneAsset
+Id: 07af30e2-837e-456c-a8c9-d9abd99851cd
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 20cc9555-9629-4310-aa0e-4d29319c2077
+        - ref!! 5a7245a3-5326-4118-8bf0-2152506981c7
+        - ref!! 7f20c4fc-4b32-47a8-b9b8-7ca1737748b6
+        - ref!! fb1d6090-bdfd-4d5d-9665-a894460d0054
+        - ref!! d3fd10b5-f840-4913-9c1f-fe77deec1cf5
+    Parts:
+        -   Folder: null
+            Entity:
+                Id: 184de7d1-102c-44b3-a445-585274ca7f6b
+                Name: Rock
+                Components:
+                    cb1a816fc4f23569bf5adf4ba84e3e00: !TransformComponent
+                        Id: d8532a7c-22ec-4fde-ba59-e9d07997b7f8
+                        Position: {X: -0.5296755, Y: -0.358516723, Z: 0.240650177}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d894c6e4414c926f27f8c042564ae1a0: !InstanceComponent
+                        Id: 1d0c2b25-7848-41cf-8906-fec2c3d795b5
+                        Master: null
+        -   Entity:
+                Id: 20cc9555-9629-4310-aa0e-4d29319c2077
+                Name: Camera
+                Components:
+                    3283ebf194f45148e29d172cd6e9156b: !TransformComponent
+                        Id: 6b7ef5ca-ba30-4e3f-b6f4-b9e204fd2cd1
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9cb628ba1da580c3d90895740ae89975: !CameraComponent
+                        Id: b66bb9bb-3c22-4426-b3d9-ebb0bf06a15a
+                        Name: null
+                        Projection: Perspective
+                        Slot: 57eb405f-7504-4739-9deb-ce6b1e8fb3e4
+                    533f8c232e17b30c28a303a27622de88: !Tessellation.BasicCameraController,Tessellation
+                        Id: 6110db79-6c35-45f7-8648-556ec92fe36d
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 5a7245a3-5326-4118-8bf0-2152506981c7
+                Name: Directional light
+                Components:
+                    c602997c7753cdc12a961fe9b795551b: !TransformComponent
+                        Id: 414c4d8f-1186-4f16-9563-a187ab54e352
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.258819044, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9acafea44d4ac84c17b0cd565e20a113: !LightComponent
+                        Id: 6bea86fb-3ab3-4358-8246-74829b644ac2
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                BiasParameters: {}
+                                ComputeTransmittance: false
+                        Intensity: 20.0
+        -   Folder: null
+            Entity:
+                Id: 7b780cca-1757-4042-9fe4-895d873cb488
+                Name: Rock
+                Components:
+                    cb1a816fc4f23569bf5adf4ba84e3e00: !TransformComponent
+                        Id: 3a60eda1-3120-4b1f-9350-c7eabbb2f463
+                        Position: {X: -2.667421, Y: -0.358516723, Z: 2.47861576}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d894c6e4414c926f27f8c042564ae1a0: !InstanceComponent
+                        Id: a44fa89b-2ef5-412e-8977-45a9944b3989
+                        Master: null
+        -   Entity:
+                Id: 7f20c4fc-4b32-47a8-b9b8-7ca1737748b6
+                Name: Skybox
+                Components:
+                    703eac2d17ff1b4e36abdc8843a7ca9d: !TransformComponent
+                        Id: 89c1299a-f82f-4522-ba80-7557338ba8f5
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b41c6dd0b26c3c701c9922c3907abca1: !BackgroundComponent
+                        Id: 70267219-2757-41a7-ae9b-33fd9f123f0e
+                        Texture: f8bc863d-7eee-48a9-84a2-8cead3b9c3d4:Skybox texture
+                    501c263c36ad470c9e5264cadcdfc4fb: !LightComponent
+                        Id: 4627e735-e5ce-4860-8c14-5cec25366ff8
+                        Type: !LightSkybox
+                            Skybox: 6cd9a4cc-d49a-4ef9-a5c1-b303482e4434:Skybox
+        -   Folder: null
+            Entity:
+                Id: a00ca40a-9edb-45b4-b891-16b36bb6d55d
+                Name: Rock
+                Components:
+                    cb1a816fc4f23569bf5adf4ba84e3e00: !TransformComponent
+                        Id: fe438ce4-9c82-42ed-b3a1-df53d26d45aa
+                        Position: {X: -2.667421, Y: -0.358516723, Z: -2.300345}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d894c6e4414c926f27f8c042564ae1a0: !InstanceComponent
+                        Id: 129740b0-4f9c-4e3a-b37b-158d35d32869
+                        Master: null
+        -   Entity:
+                Id: d3fd10b5-f840-4913-9c1f-fe77deec1cf5
+                Name: Rocks
+                Components:
+                    a5ab86c6dda6f895d835b208d0f88f8d: !TransformComponent
+                        Id: d5acfc02-13db-4e05-a31b-3476368c0d9b
+                        Position: {X: 0.0, Y: 0.5, Z: -0.216982946}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            88f940d82c70f2ae042d1491736cd652: ref!! bd93574b-33a8-4e15-9424-e63811a38bbd
+                            b1ab27c5107c33bedeb59bbd2cd2439d: ref!! 3a60eda1-3120-4b1f-9350-c7eabbb2f463
+                            76217ae5350337552c9a4b71559c160e: ref!! fe438ce4-9c82-42ed-b3a1-df53d26d45aa
+                            04d45e12e8d4f04d4a061fc35ad577ec: ref!! 4410f7be-9abd-41e9-906f-ce8e9275f003
+                            96fc712f0ec204b270ae7d8e15f31962: ref!! d8532a7c-22ec-4fde-ba59-e9d07997b7f8
+                    894b3befe6243555a231e1e09130de01: !ModelComponent
+                        Id: 0b5c34ee-5023-43d4-aa35-9d4a253db2d7
+                        Model: 8b6797b0-be91-433d-9744-948f7ef436c1:Sphere
+                        Materials:
+                            a34dc44304bc9caf7a5f9fb6405163e9~0: 8fa62bcd-317e-46cc-aa26-f5e47311b2c0:Textures/texturehaven/mossy_rock_1k_png/mossy_rock
+                    0e3e481297bdeee4b43ef8eaa308ae1f: !InstancingComponent
+                        Id: 83fd8957-1f80-4d19-b430-c75b9330e833
+                        Type: !InstancingEntityTransform {}
+        -   Entity:
+                Id: e82ad5bf-aa97-4a7e-a206-b6e42440495a
+                Name: Rock
+                Components:
+                    cb1a816fc4f23569bf5adf4ba84e3e00: !TransformComponent
+                        Id: bd93574b-33a8-4e15-9424-e63811a38bbd
+                        Position: {X: 2.546497, Y: -0.358516723, Z: 2.47861576}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.96513057, Y: 0.629166543, Z: 1.96513057}
+                        Children: {}
+                    d894c6e4414c926f27f8c042564ae1a0: !InstanceComponent
+                        Id: b0a98e08-1892-433a-8833-2a23afd1c49d
+                        Master: null
+        -   Folder: null
+            Entity:
+                Id: ef10c4e2-42ae-45ba-bcce-bf88e0af3dc5
+                Name: Rock
+                Components:
+                    cb1a816fc4f23569bf5adf4ba84e3e00: !TransformComponent
+                        Id: 4410f7be-9abd-41e9-906f-ce8e9275f003
+                        Position: {X: 1.47787213, Y: -0.358516723, Z: -2.300345}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d894c6e4414c926f27f8c042564ae1a0: !InstanceComponent
+                        Id: 7a172a0d-313e-4d23-b341-77662fcac46e
+                        Master: null
+        -   Entity:
+                Id: fb1d6090-bdfd-4d5d-9665-a894460d0054
+                Name: Ground
+                Components:
+                    061f148cca8d7380c4589ed7ae4ad095: !TransformComponent
+                        Id: 84d785d7-ccf0-4608-9219-6154e596dd39
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    b31b83034f4a09410a8a5a1ef2cc7304: !ModelComponent
+                        Id: 9c9ecb87-fdb9-49f3-9ea5-d1b0813de8d4
+                        Model: a9880d0d-d2ef-4b96-9976-95df8814e542:Ground
+                        Materials:
+                            51fc2b6bc2f56d820547073d2ecbb48b~0: 2171c0c1-6277-4eea-b24b-09030da07232:Textures/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01

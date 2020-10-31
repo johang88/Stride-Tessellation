@@ -1,0 +1,7 @@
+!Texture
+Id: bfe44e31-4e1b-4a87-949f-1e69e83d169d
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/texturehaven/cobblestone_large_01_2k_png/cobblestone_large_01_nor_2k.png
+Type: !NormalMapTextureType
+    InvertY: false
